@@ -60,6 +60,7 @@ header {
 			color: #5d2124;
 			font-weight: normal;
 			@include fz(60);
+			line-height: 1;
 			span {
 				display: block;
 				margin-bottom: 45px;
@@ -75,6 +76,9 @@ header {
 			padding: 220px 0;
 			color: #c88132;
 			background: #3d0e07;
+			.list-cm {
+				padding-left: 15px;
+			}
 		}
 	}
 }
