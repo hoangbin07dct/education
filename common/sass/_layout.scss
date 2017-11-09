@@ -1,0 +1,64 @@
+@charset "UTF-8";
+@import "compass";
+@import "mixin";
+@import url(https://fonts.googleapis.com/css?family=Quicksand);
+
+.wrap {
+	width: 100%;
+	max-width: 1170px;
+	margin: 0 auto;
+	@include QuickSand();
+	font-size: 18px;
+}
+
+header {
+	.h-top {
+		padding: 5px 0;
+		background: #3d0e07;
+		.logo {
+			display: inline-block;
+			float: left;
+			vertical-align: middle;
+		}
+		.navi {
+			display: inline-block;
+
+			float: right;
+			margin-right: -13px;
+			font-size: 0;
+			vertical-align: middle;
+			.item {
+				display: inline-block;
+				height: 50px;
+				padding: 16px 0;
+				margin: 0 13px;
+				@include fz(20);
+				a {
+					display: inline-block;
+					color: #ffce68;
+					&:hover {
+						opacity: .7;
+					}
+				}
+			}
+		}
+	}
+	.h-main {
+		height: 842px;
+		padding-top: 210px;
+		background: url(../img/bg-header.jpg) no-repeat;
+		background-size: cover;
+		.txt-catch {
+			@include QuickSand();
+			color: #5d2124;
+			font-weight: normal;
+			@include fz(60);
+			span {
+				display: block;
+				margin-bottom: 45px;
+				text-transform: uppercase;
+				font-weight: 900;
+			}
+		}
+	}
+}

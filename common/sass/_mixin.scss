@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+@mixin fz($s: 16) {
+  font-size: $s + px;
+  font-size: ($s / 10) + rem;
+}
+
+@mixin QuickSand {
+	font-family: 'Quicksand', sans-serif;
+}
+
+@mixin QuickSand_b {
+	font-family: 'Quicksand', sans-serif;
+	font-weight: bold;
+}
+@mixin QuickSand_i {
+	font-family: 'Quicksand', sans-serif;
+	font-style: italic;
+}
+
+@mixin QuickSand_bi {
+	font-family: 'Quicksand', sans-serif;
+	font-weight: bold;
+	font-style: italic;
+}
+
+
